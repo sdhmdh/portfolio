@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #222831;
+    color: #e5e5e5;
+}
+.color-primary{
+    color: #3fc1c9;
+}
+.content{
+    padding: 2rem;
+    margin: 6rem 0;
+}
+.row-margin-zero{
+    margin-left: 0 !important;
+}
+.btn:hover{
+    color: white;
+    background-color:#3fc1c9;
+    border: 1px solid #3fc1c9 !important;
+}
+.container-wrappper{
+   padding: 6rem;
+}
+/* Navbar */
+.navbar{
+    background-color: #222831;
+    padding: 2rem !important;
+    min-width: 100%;
+    z-index: 100;
+    position: fixed;
+    transition: all 0.3s cubic-bezier(.89,.88,.31,.31);
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url('images/menu.png') !important;
+}
+.nav-item{
+    margin-right: 3rem !important;
+}
+.navbar-nav  li a{
+    color: white !important;
+}
+.navbar-nav  li a:hover{
+    color: #3fc1c9 !important;
+}
+.btn-resume{
+    padding: 0.3rem 0.5rem!important;
+    font-size: 1rem !important;
+}
+
+/* Intro Section */
+.jumbotron{
+    background-color: transparent !important;
+    color: white;
+}
+.social-icons{
+    display: flex;
+    margin: 1.5rem 0;
+}
+.social-icons img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+.btn-projects-navigate{
+    color: #3fc1c9;
+    border: 1px solid #3fc1c9;
+    cursor: pointer;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    transition: all 0.1s cubic-bezier(.89,.88,.31,.31);
+    font-family: "Fira Code", monospace;
+    border-radius: 2px;
+    background-color: transparent;
+}
+
+/* About Section */
+.about-section-details{
+    display: flex;
+    flex-direction: column;
+}
+.about-bar{
+   border-top: 3px solid white;
+   top: 30%;
+   left: 0;
+   right: 0;
+   margin: 3rem 0;
+   max-width: 70%;
+   display: flex;
+   justify-content: space-between;
+}
+.content-box ul{
+    margin-left: 15px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 5px;
+}
+.skills li{
+    list-style: none;
+    padding: 0.5rem 1rem;
+    margin: 10px 15px 0 0;
+    font-size: 1.1rem;
+    font-family: "Fira Code", monospace;
+    color: #222831;
+    background-color: #DCDCDC;
+}
+.product-skills-chips li{
+    padding: 0.2rem 0.3rem !important;
+    font-size: 0.9rem !important;
+}
+.checkpoints{
+    background-color: white;
+    border-radius: 50%;
+    width: 1.2rem;
+    margin: -12px 0 0 -2px;
+    height: 1.2rem;
+    cursor: pointer;
+    -webkit-transition: transform 200ms;
+    -webkit-transition: -webkit-transform 200ms;
+    transition: all .2s ease-in-out;
+}
+.checkpoints p{
+    margin: 20px 0 0 0;
+    color: #3fc1c9;
+    font-size: 0.9rem;
+}
+.checkpoints-scale{
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.3);
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.services div p{
+    text-align: center;
+    margin-top: 8px;
+}
+.services-icon{
+    background-color: ghostwhite;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+/* Projects Section */
+.project{
+    padding: 3rem 0;
+}
+.project img{
+    max-width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Contact Section */
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem 0 3rem 0;
+}
+.rocket-icon{
+    width: 6rem;
+}
+.contact-section h3{
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+
+@media (max-width:700px){
+    .navbar{padding: 1rem !important;}
+    .container-wrappper{padding: 0 !important}
+    .about-bar{max-width: 100% !important}
+}
+@media (max-width:900px){
+    .services{display: none !important}
+}
